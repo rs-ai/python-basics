@@ -27,7 +27,7 @@ print(abc)
 #calling a function
 print(len(abc))
 
-#printing a sub list
+#printing only part of the list
 print(abc[1:3])
 
 #saving an array in numpy which maintains a n dimensional object
