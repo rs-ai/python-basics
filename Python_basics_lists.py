@@ -1,4 +1,4 @@
-# welcome to python basics
+# Welcome to python basics
 
 #variables
 tutorialName ="python_basics"
@@ -15,12 +15,17 @@ print (int(b))
 
 print(" a and b original values are: "+str(a)+ " and "+str(b))
 
-#lists - a collection
+#lists - a collection or a group of objects. A list can contain different object types as well, so you can potentially combine
+# strings, integers or booleans within a single list.
+
 countries = ['USA','UK','Canada','Australia','New Zealand']
 print(countries)
 
-#navigating python indexes - they start at 0. We can traverse from the end starting at -1
-print("The second one from first is "+countries[1]+ " second from last is " + countries[-2])
+cryptos = ['BTC',40000,'ETH',2000]
+print(cryptos)
+
+#navigating python indexes - they start at 0. We can traverse from the end starting at -1 as well
+print("The second one from firsst in the list is "+countries[1]+ " second from last in the list is " + countries[-2])
 
 # You can change elements in a list by assigning the values you want against the index number.
 # in this case i want to change the first two names to represent the full names
@@ -43,4 +48,13 @@ countries = countries + ["ASIA"]
 print (countries[-1])
 #oops .. mistake that's a continent, let's remove that from the list
 del countries[-1]
+
+# Functions that can be applied to a list - append, remove, len, max, min
+countries.append('Denmark')
+countries.remove('Canada')
+
+len(countries) # will provide the length of the list - the number of items it holds
+max(countries) # this is always tricky with alphabets - but you will get the value that's highest in alphabet list - which is USA
+min(countries) # it will return australia - the value with the lowest/first alphabet
+
 
